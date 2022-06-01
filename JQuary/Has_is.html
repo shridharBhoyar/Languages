@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #aa{
+            border: 5px solid pink;
+        }
+    </style>
+</head>
+<body>
+    <h1>hii</h1>
+    <div id="xyz" style="position: relative;">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quasi soluta ea fuga distinctio excepturi, minus ducimus consectetur aspernatur! Nobis, veniam esse aliquam quo eaque exercitationem facere tempore voluptas provident.</p>
+    <div id="aa">
+        <h1 id="cc">hii shri </h1>
+        <p id="op">Lorem ipsum dolor <span>dolor, sit amet consectetur</span> sit amet, consectetur adipisicing elit. Corrupti odio totam minus fugiat illo rem impedit explicabo aperiam iure consequatur nostrum blanditiis perferendis sed adipisci ducimus, neque pariatur, assumenda quam!</p>
+        <h1>xyz</h1>
+        <p>Lorem ipsum  adipisicing elit. Maxime corrupti nemo explicabo eligendi magnam tempora fugit quaerat quae accusamus repellendus aliquid laborum ipsum dolore, quia similique voluptatum fuga culpa excepturi?</p>
+    </div>
+    <p id="mm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam illum dolor perferendis maxime magnam accusamus dignissimos, mollitia nulla placeat, quibusdam, maiores neque enim recusandae debitis dolores architecto autem id tempora?</p>
+
+</div>
+    <ul>
+        <li > <span>on</span> </li>
+        <li>off</li>
+        <li>ab</li>
+        <li>xy</li>
+    </ul>
+
+    <script src="jQuary.js"></script>
+    <script>
+       $(document).ready(function(){
+       //$("p").has("span").css("color","red");
+      // $("li").has("span").css("color","red");
+       console.log($("p").parent().is("div"));
+        });
+    </script>
+</body>
+</html>

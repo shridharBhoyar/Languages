@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    #aa{
+        border: 5px solid pink;
+        padding: 40px;
+        margin: 50px;
+    }
+
+    </style>
+</head>
+<body>
+    
+    <h1>hii shri</h1>
+
+    <div id="aa">
+      <h2>hello shri</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic magnam eveniet dolores quidem quam velit cupiditate distinctio autem asperiores architecto unde consectetur, magni culpa ut, dolore quaerat nemo eum alias.</p>
+    
+    </div>
+    <button id="btn1">wrap</button>
+    <button id="btn2">Unwrap</button>
+
+    <script src="jQuary.js"></script>
+
+   <script>
+
+     $(document).ready(function(){
+         $("#btn1").click(function(){
+            $("#aa h2").wrap("<h1>xyz</h1>");
+         });
+        
+         $("#btn2").click(function(){
+            $("#aa h2").unwrap();
+         });
+        
+
+     });
+
+   </script>
+
+</body>
+</html>

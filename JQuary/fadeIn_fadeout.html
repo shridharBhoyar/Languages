@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+     #aa{
+        
+        border: 5px solid red;
+        background-color: sandybrown;
+        }
+
+    </style>
+   
+</head>
+<body>
+    <h1>hii shri</h1>
+ 
+    <div id="aa">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum laboriosam consectetur excepturi unde eos velit magni impedit temporibus ea quas? Magni harum officiis fugiat iste. Quis quibusdam asperiores quas laboriosam!</p>
+    </div>
+    <button id="btnh">FadeOut</button>
+    <button id="btns">FadeIn</button>
+    <button id="btnt">toggle</button>
+    <script src="jQuary.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $("#btnh").click(function(){
+            $("#aa").fadeOut("slow",function(){
+                console.log("fadeout....");
+            });
+        });
+
+        $("#btns").click(function(){
+            $("#aa").fadeIn(5000,function(){
+                console.log("fadeIn....");
+            });
+        });
+
+        $("#btnt").click(function(){
+            $("#aa").toggle("fast",function(){
+                console.log("toggle....");
+            });
+        });
+    });
+</script>
+
+</body>
+</html>

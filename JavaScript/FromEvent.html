@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+     #ii{
+         border: 4px solid pink;
+         background-color: plum;
+         width: 400px;
+     }
+
+    </style>
+</head>
+<body>
+    
+<form action="">
+
+<input type="text" id="aa" onfocus="focuss(this)" onblur="blurr(this)" oninput="inputfun(this)"><br>
+<input type="text" id="" onfocus="focuss(this)" onblur="blurr(this)" oninput="inputfun(this)"><br>
+<input type="submit"><br>
+<select>
+   <option value="">india</option>
+   <option value="">pak</option>
+   <option value="">china</option>
+   <option value="">uk</option>
+
+ 
+
+</select>
+
+</form>
+
+<div id="ii"></div>
+
+<script>
+
+  function focuss(elmt){
+    elmt.style.background="yellow";
+ // var tagt=  document.getElementById("aa");
+   // tagt.style.background="yellow";
+  }
+
+function blurr(elmt){
+    elmt.style.background= "";
+    //var tagt=  document.getElementById("bb");
+    //tagt.style.background="";
+}
+
+function inputfun(elmt){
+
+    var a=elmt.value;
+    document.getElementById("ii").innerHTML=a;
+
+}
+
+</script>
+
+</body>
+</html>

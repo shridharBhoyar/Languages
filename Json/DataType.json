@@ -1,0 +1,26 @@
+{
+    "Name":"Shri",
+    "Age":22,
+    "MobileNo":914545464,
+    "Courses":["C","C++",".Net","Python"],
+    "Address":{
+        "Area":"Khairi P",
+        "Post":"Kothulama",
+        "Pin":441101
+    },
+
+    "Firends":
+        [
+            {"Name":"tushar","Age":12,"area":"Khairi P"},
+            {"Name":"shyam", "Age":40,"area":"Khairi P"},
+            {"Name":"ram","Age":20,"area":"Khairi P"}
+        ],
+
+        
+        
+        "maried status":true,
+
+         "Middle Name":null
+
+    
+}

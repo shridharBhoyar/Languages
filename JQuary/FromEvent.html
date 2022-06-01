@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #xyz{
+            border: 5px solid pink;
+
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>hii shri</h1>
+
+    <form action="">
+
+    <input type="text" id="fimp"><br>
+    <input type="text" id="limp"><br>
+
+    <select name="" id="slt">
+        <option value="ind">ind</option>
+        <option value="pk">pak</option>
+        <option value="uk">amerika</option>
+        <option value="usa">usa</option>
+    </select> <br>
+
+    <button type="submit" id="smt">submit</button>
+
+    </form>
+
+    <div id="xyz"></div>
+
+<script src="jQuary.js"></script>
+
+<script>
+
+$(document).ready(function(){
+    $("#fimp ,#limp").focus(function(){
+        $(this).css("background-color","pink");
+    })
+
+    $("#fimp,#limp").blur(function(){
+        $(this).css("background-color","");
+    });
+
+    $("#fimp,#limp").select(function(){
+        $(this).css("color","yellow");
+    });
+
+    $("#smt").submit(function(){
+        alert("firm sumit");
+    });
+
+    $("#slt").change(function(){
+     $(this).css("color","red");
+     var a=$("#slt").val();
+    $("#xyz").html(a);
+    });
+
+    $("#fimp").val("nam");
+    $("#limp").val("last nam");
+
+  
+});
+
+
+</script>
+
+</body>
+</html>

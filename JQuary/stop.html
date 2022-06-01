@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #aa{
+            border: 5px solid black;
+            width: 100px;
+            height: 100px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>hii shri</h1>
+  <div>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint maxime laborum quod alias exercitationem, ipsa doloribus non vitae earum, reprehenderit reiciendis rem rerum aut voluptates dolore, porro illo soluta omnis.</p>
+
+  </div>
+  <button id="qq">clickk</button> <br>
+  <button id="stp"> stop</button>
+
+  <div id="aa"><h1>shri</h1></div>
+
+  <script src="jQuary.js"></script>
+<script>
+
+$(document).ready(function(){
+    $("#qq").click(function(){
+        $("#aa").animate({left : '110px'});
+        $("#aa").animate({top:"110px"});
+    });
+
+    $("#stp").click(function(){
+        $("#aa").stop();
+    });
+  
+});
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    #aa{
+        border: 5px solid pink;
+
+    }
+</style>
+</head>
+<body>
+    <div id="aa">
+       <h1>shri</h1>
+        
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vitae eligendi a eveniet repellendus magnam eum suscipit minus delectus? Vero rerum facilis doloribus, dolores veniam nostrum illum delectus recusandae incidunt.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum deserunt eius ducimus voluptatibus aliquam odio sint illo dignissimos ab beatae. Aliquam iure distinctio provident eos in velit omnis dicta ab!</p> 
+    </div>
+
+    <h2></h2>
+    <script src="jQuary.js"></script>
+    <script>
+
+        $(document).ready(function(){
+            $("#aa").click(function(event){
+             $("h2").text(event.target.nodeName);
+            });
+        });
+    </script>
+</body>
+
+</html>

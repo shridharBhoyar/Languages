@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+     #aa{
+        
+        border: 5px solid red;
+        background-color: sandybrown;
+        }
+
+    </style>
+   
+</head>
+<body>
+    <h1>hii shri</h1>
+ 
+    <div id="aa">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum laboriosam consectetur excepturi unde eos velit magni impedit temporibus ea quas? Magni harum officiis fugiat iste. Quis quibusdam asperiores quas laboriosam!</p>
+    </div>
+    <button id="btnh">slideUp</button>
+    <button id="btns">slideDow</button>
+    <button id="btnt">Slidetoggle</button>
+    <script src="jQuary.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $("#btnh").click(function(){
+            $("#aa").slideUp("slow",function(){
+                console.log("Slideup....");
+            });
+        });
+
+        $("#btns").click(function(){
+            $("#aa").slideDown(5000,function(){
+                console.log("slideDown....");
+            });
+        });
+
+        $("#btnt").click(function(){
+            $("#aa").slideToggle("fast",function(){
+                console.log("Slidetoggle....");
+            });
+        });
+    });
+</script>
+
+</body>
+</html>

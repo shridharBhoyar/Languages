@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #aa{
+            border: 5px solid pink;
+        }
+    </style>
+</head>
+<body>
+    <h1>hii</h1>
+    <div id="xyz" style="position: relative;">
+    <div id="aa">
+        <h1 id="cc">hii shri </h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti odio totam minus fugiat illo rem impedit explicabo aperiam iure consequatur nostrum blanditiis perferendis sed adipisci ducimus, neque pariatur, assumenda quam!</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam illum dolor perferendis maxime magnam accusamus dignissimos, mollitia nulla placeat, quibusdam, maiores neque enim recusandae debitis dolores architecto autem id tempora?</p>
+
+</div>
+    <ul>
+        <li id="bb">on</li>
+        <li>off</li>
+        <li>ab</li>
+        <li>xy</li>
+    </ul>
+
+    <script src="jQuary.js"></script>
+    <script>
+        $(document).ready(function(){
+        // console.log( $("#aa").children().css("color","red"));
+         console.log( $("#aa").find("p").css("color","red"));  //only child show
+         
+        });
+    </script>
+</body>
+</html>

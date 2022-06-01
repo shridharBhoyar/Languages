@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+   
+    <a href="www.google.co.in" id="aa">link 1 googlel</a> <br><br>
+    <a href="www.google.com" id="bb">link 2 googlel</a>
+  <h2></h2>
+    <script src="jQuary.js"></script>
+    <script>
+        $(document).ready(function(){
+          $("#aa").click(function(event){
+            event.preventDefault();
+            var a= event.isDefaultPrevented();
+            $("h2").text(a);
+          });
+        });
+    </script>
+</body>
+</html>

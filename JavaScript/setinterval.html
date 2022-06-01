@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    #aa{
+        border: 5px solid  green;
+        width: 100px;
+        height: 200px;
+    }
+
+    </style>
+</head>
+<body>
+    
+
+<div id="aa"></div>
+
+
+<script>
+var a=0;
+
+var id=setInterval(interval,500)
+
+function interval(){
+  a=a+10;
+  if(a==60)
+  {
+     clearInterval(id);
+  }
+  else
+  {
+  var targt=document.getElementById("aa");
+  targt.style.marginLeft=a + 'px';
+   // document.getElementById("aa").style.background="red";
+  }
+}
+
+</script>
+
+</body>
+</html>
